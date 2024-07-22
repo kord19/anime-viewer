@@ -239,6 +239,18 @@ header h1 {
   margin-top: 2rem;
 }
 
+.anime-detail .anime-banner {
+  margin-bottom: 2rem;
+}
+
+.anime-detail .anime-banner img {
+  width: 100%;
+  max-width: 500px; /* Ajuste o tamanho máximo do banner */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .anime-detail h1 {
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -266,6 +278,141 @@ header h1 {
 .anime-detail button:hover {
   background: #0056b3;
 }
+
+.episode-list {
+  margin-top: 2rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.episode-list-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s, box-shadow 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.episode-list-item:hover {
+  background: #f1f1f1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.episode-list-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.episode-list-item button {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.episode-list-item button:hover {
+  background: #0056b3;
+}
+
+.next-season-button {
+  background: #28a745; /* Verde para a próxima temporada */
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.next-season-button:hover {
+  background: #218838;
+}
+
+.anime-detail .description {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.anime-detail .episode-count {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 100%;
+  text-align: left;
+}
+
+/* Dropdown Button Hover */
+.dropdown-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Show Dropdown Content */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Item */
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+/* Dropdown Item Hover */
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Last Dropdown Item (No Bottom Border) */
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
 
 /* Episode List */
 .episode-list {
@@ -310,3 +457,47 @@ header h1 {
 .episode-list-item button:hover {
   background: #0056b3;
 }
+
+/* Anime List Filters */
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.letter-buttons {
+  margin-bottom: 1rem;
+}
+
+.letter-buttons button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.letter-buttons button:hover {
+  background: #0056b3;
+}
+
+.genre-filter {
+  margin-bottom: 1rem;
+}
+
+.genre-filter label {
+  margin-right: 0.5rem;
+}
+
+.genre-filter select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
